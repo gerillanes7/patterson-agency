@@ -1,0 +1,66 @@
+.myCartContainer {
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 10px;
+
+    .gridSection {
+        background-color: #FFF;
+        border: 2px solid #ccc;
+
+        .titleContainer {
+            width: auto;
+            border-bottom: 2px solid #ccc;
+            padding: 5px 30px 5px 30px;
+            display: flex;
+            justify-content: space-between;
+
+            h3 {
+                text-transform: uppercase;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            .quantityProductsLabel {
+                font-family: 'Poppins', sans-serif;
+                font-size: 18px;
+            }
+
+            .totalPriceLabel {
+                font-family: 'Poppins', sans-serif;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .cartProductsInfo {
+        grid-column: span 2 / span 2;
+
+        .allProducts {
+            margin: 32px 0px 32px 0px;
+            display: grid;
+            gap: 32px;
+        }
+    }
+
+    .cartCheckout {
+        align-self: flex-start;
+        .buttonContainer {
+            display: flex;
+            justify-content: center;
+            padding: 50px;
+        }
+    }
+
+    .keepBuyingContainer {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        span {
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+            color: #000;
+        }
+    }
+}
+

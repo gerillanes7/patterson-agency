@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+
+    h1, h3 {
+        font-family: 'Poppins', sans-serif;
+    }
+}
+
+.productsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

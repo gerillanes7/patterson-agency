@@ -1,0 +1,33 @@
+.productInfoContainer {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 32px;
+    margin-left: 32px;
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    span {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .deleteProduct {
+        text-align: right;
+        margin-right: 32px;
+    }
+
+    svg {
+        cursor: pointer;
+
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
+
+        &:hover {
+            color: #ccc;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+button {
+    border: none;
+    background-color: rgb(34, 34, 34);
+    color: #FFF;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    width: 100%;
+    cursor: pointer;
+
+    &:hover {
+        color: #ccc;
+    }
+
+    &:disabled {
+        background-color: red;
+        cursor: alias;
+    }
+}

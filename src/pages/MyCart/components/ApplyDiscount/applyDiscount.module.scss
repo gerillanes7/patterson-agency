@@ -1,0 +1,10 @@
+.applyDiscountContainer {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+
+    span {
+        font-family: 'Poppins', sans-serif;
+    }
+}
